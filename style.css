@@ -1,10 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.logo-image {
-    max-height: 40px;
-}
 .hero {
-    max-height: 90vh;
-    margin-bottom: auto;
+    height: 60vh;
 }
