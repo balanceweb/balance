@@ -1,6 +1,22 @@
 body {
     font-family: "Poppins", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 .hero {
-    height: 60vh;
+    height: 90vh;
 }
+
+.card-title {
+    margin-bottom: 1.5rem;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+  }
