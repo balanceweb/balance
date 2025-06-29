@@ -4,17 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balance</title>
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- Favicons  -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap Icons/ -->
     <link
@@ -25,7 +48,6 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-
     <header class="header">
       <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
         <div class="container-sm">
@@ -45,7 +67,6 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav m-auto py-3 py-md-0">
-
               <li class="nav-item">
                 <a class="nav-link" href="#services">Послуги</a>
               </li>
@@ -53,7 +74,8 @@
                 <a class="nav-link" aria-current="page" href="#about"
                   >Про мене</a
                 >
-              </li>              <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Портфоліо</a>
               </li>
               <li class="nav-item">
@@ -89,9 +111,9 @@
         </div>
       </nav>
     </header>
-    
+
     <!-- Section Hero -->
-    <section class="hero py-5 bg-light">
+    <section class="hero py-5 bg-light" id="hero">
       <div class="h-100 container">
         <div class="row align-items-center h-100">
           <div class="col">
@@ -107,15 +129,15 @@
               data-aos="fade-up"
               data-aos-duration="1050"
             >
-             на Bootstrap та Wordpress
+              на Bootstrap та Wordpress
             </p>
             <div class="btn-wrap text-center">
               <a
                 href="#services"
-                class="btn btn-dark px-3 py-2 shadow"
+                class="btn btn-dark px-4 py-2 shadow"
                 data-aos="fade-up"
                 data-aos-duration="1100"
-                >Дізнатись більше</a
+                >Дивитись послуги</a
               >
             </div>
           </div>
@@ -126,10 +148,16 @@
     <!-- Section Services -->
     <section class="services py-5" id="services">
       <div class="container">
-        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up">Мої послуги</h2>
+        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up">
+          Мої послуги
+        </h2>
         <div class="row g-3">
           <!-- Сайт-візитка -->
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="100">
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-duration="100"
+          >
             <div class="card card-hover shadow h-100 py-4 bg-light">
               <i
                 class="bi bi-person-square text-center display-5 text-dark"
@@ -144,7 +172,11 @@
             </div>
           </div>
           <!-- Лендінг -->
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="200">
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-duration="200"
+          >
             <div class="card card-hover shadow h-100 py-4 bg-light">
               <i
                 class="bi bi-lightning-charge-fill text-center display-5 text-dark"
@@ -159,11 +191,17 @@
             </div>
           </div>
           <!-- Багатосторінковий сайт -->
-          <div class="col-md-6  col-lg-3" data-aos="fade-up" data-aos-duration="300">
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-duration="300"
+          >
             <div class="card card-hover shadow h-100 py-4 bg-light">
               <i class="bi bi-journals text-center display-5 text-dark"></i>
               <div class="card-body">
-                <h5 class="card-title text-center fw-semibold">Багатосторінковий сайт</h5>
+                <h5 class="card-title text-center fw-semibold">
+                  Багатосторінковий сайт
+                </h5>
                 <p class="card-text">
                   Сайт з кількома розділами: Головна, Послуги, Про мене,
                   Контакти — для більшого представлення бізнесу.
@@ -172,13 +210,19 @@
             </div>
           </div>
           <!-- Розміщення сайту -->
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="400">
+          <div
+            class="col-md-6 col-lg-3"
+            data-aos="fade-up"
+            data-aos-duration="400"
+          >
             <div class="card card-hover shadow h-100 py-4 bg-light">
               <i
                 class="bi bi-cloud-upload-fill text-center display-5 text-dark"
               ></i>
               <div class="card-body">
-                <h5 class="card-title text-center fw-semibold">Розміщення сайту</h5>
+                <h5 class="card-title text-center fw-semibold">
+                  Розміщення сайту
+                </h5>
                 <p class="card-text">
                   Завантаження сайту на хостинг або безкоштовне розміщення на
                   GitHub Pages з підключенням домену.
@@ -212,7 +256,7 @@
           >
             <h2 class="mb-4 fw-semibold">Про мене</h2>
             <p>Створюю сучасні адаптивні сайти для малого бізнесу.</p>
-            <p class="mb-4">
+            <p class="mb-5">
               Допоможу вам представити ваш бізнес в онлайні. Або оновлю ваш
               старий сайт для досягнення кращих результатів.
             </p>
@@ -230,44 +274,80 @@
     <section class="portfolio py-5" id="portfolio">
       <div class="container">
         <div class="row g-3">
-          <h2 class="text-center mb-4 fw-semibold" data-aos="fade-up" data-aos-duration="400">Портфоліо</h2>
-            <!-- Коуч Анна -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="200">
-              <div class="card card-hover shadow bg-light h-100">
-                <div class="card-body d-flex flex-column">
-                  <img src="./anna_178.jpg" alt="Коуч Анна" class="img-fluid rounded mb-4 border">
-                  <h5 class="card-title fw-semibold">Коуч Анна</h5>
-                  <p class="card-text">Односторінковий сайт-візитка з описом послуг, розділом "Про
-                    себе", блоком зворотного зв'язку та адаптивним дизайном.</p>
-                    <a href="anna.freestyle.org.ua" class="btn btn-outline-dark mt-auto align-self-start px-3 py-2">Переглянути</a>
-                </div>
+          <h2
+            class="text-center mb-4 fw-semibold"
+            data-aos="fade-up"
+            data-aos-duration="400"
+          >
+            Портфоліо
+          </h2>
+          <!-- Коуч Анна -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="200">
+            <div class="card card-hover shadow bg-light h-100">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="./anna_178.jpg"
+                  alt="Коуч Анна"
+                  class="img-fluid rounded mb-4 border"
+                />
+                <h5 class="card-title fw-semibold">Коуч Анна</h5>
+                <p class="card-text">
+                  Односторінковий сайт-візитка з описом послуг, розділом "Про
+                  себе", блоком зворотного зв'язку та адаптивним дизайном.
+                </p>
+                <a
+                  href="anna.freestyle.org.ua"
+                  class="btn btn-outline-dark mt-auto align-self-start px-3 py-2"
+                  >Переглянути</a
+                >
               </div>
             </div>
-            <!-- Нутриціолог Наталія -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="400">
-              <div class="card card-hover shadow bg-light h-100">
-                <div class="card-body d-flex flex-column">
-                  <img src="./natalia_178.jpg" alt="Нутриціолог Наталія" class="img-fluid rounded mb-4 border">
-                  <h5 class="card-title fw-semibold">Нутриціолог Наталія</h5>
-                  <p class="card-text">Лендинг для консультацій з харчування. Оптимізований під
-                    Instagram-аудиторію, має CTA, опис послуг і блок "Записатися".</p>
-                    <a href="diet.freestyle.org.ua" class="btn btn-outline-dark mt-auto align-self-start px-3 py-2">Переглянути</a>
-                </div>
+          </div>
+          <!-- Нутриціолог Наталія -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="400">
+            <div class="card card-hover shadow bg-light h-100">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="./natalia_178.jpg"
+                  alt="Нутриціолог Наталія"
+                  class="img-fluid rounded mb-4 border"
+                />
+                <h5 class="card-title fw-semibold">Нутриціолог Наталія</h5>
+                <p class="card-text">
+                  Лендинг для консультацій з харчування. Оптимізований під
+                  Instagram-аудиторію, має CTA, опис послуг і блок "Записатися".
+                </p>
+                <a
+                  href="diet.freestyle.org.ua"
+                  class="btn btn-outline-dark mt-auto align-self-start px-3 py-2"
+                  >Переглянути</a
+                >
               </div>
             </div>
-            <!-- Freestyle Hub -->
-            <div class="col-md-4" data-aos="fade-up" data-aos-duration="600">
-              <div class="card card-hover shadow bg-light h-100">
-                <div class="card-body d-flex flex-column">
-                  <img src="./freestyle_178.jpg" alt="Freestyle Hub" class="img-fluid rounded mb-4 border">
-                  <h5 class="card-title fw-semibold">Freestyle Hub</h5>
-                  <p class="card-text">Багатосторінковий сайт-платформа з піддоменами для окремих
-                    проєктів. Вітрина послуг, портфоліо, блогу і волонтерських
-                    ініціатив.</p>
-                    <a href="freestyle.org.ua" class="btn btn-outline-dark mt-auto align-self-start px-3 py-2">Переглянути</a>
-                </div>
+          </div>
+          <!-- Freestyle Hub -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="600">
+            <div class="card card-hover shadow bg-light h-100">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="./freestyle_178.jpg"
+                  alt="Freestyle Hub"
+                  class="img-fluid rounded mb-4 border"
+                />
+                <h5 class="card-title fw-semibold">Freestyle Studio</h5>
+                <p class="card-text">
+                  Багатосторінковий сайт-платформа з піддоменами для окремих
+                  проєктів. Вітрина послуг, портфоліо, блогу і волонтерських
+                  ініціатив.
+                </p>
+                <a
+                  href="freestyle.org.ua"
+                  class="btn btn-outline-dark mt-auto align-self-start px-3 py-2"
+                  >Переглянути</a
+                >
               </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
@@ -275,30 +355,49 @@
     <!-- Section Info -->
     <section class="pain-points py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up">Я допомагаю, якщо…</h2>
+        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up">
+          Я допомагаю, якщо…
+        </h2>
         <div class="row g-4">
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="p-4 bg-white shadow rounded h-100">
-              <h5 class="card-title fw-semibold"> У вас обмежений бюджет</h5>
-              <p class="mb-0">Пропоную безкоштовні або недорогі варіанти сайтів – від 0 до 1800 грн.</p>
+              <h5 class="card-title fw-semibold">У вас обмежений бюджет</h5>
+              <p class="mb-0">
+                Пропоную безкоштовні або недорогі варіанти сайтів – від 0 до
+                1800 грн.
+              </p>
             </div>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="p-4 bg-white shadow rounded h-100">
-              <h5 class="card-title fw-semibold"> Потрібен простий сайт для старту</h5>
-              <p class="mb-0">Швидко створюю простий сайт-візитку, лендинг або багатосторінковий сайт.</p>
+              <h5 class="card-title fw-semibold">
+                Потрібен простий сайт для старту
+              </h5>
+              <p class="mb-0">
+                Швидко створюю простий сайт-візитку, лендинг або
+                багатосторінковий сайт.
+              </p>
             </div>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="p-4 bg-white shadow rounded h-100">
-              <h5 class="card-title fw-semibold"> Немає досвіду в запуску сайтів</h5>
-              <p class="mb-0">Поясню просто, допоможу з розміщенням, доменом і підтримкою.</p>
+              <h5 class="card-title fw-semibold">
+                Немає досвіду в запуску сайтів
+              </h5>
+              <p class="mb-0">
+                Поясню просто, допоможу з розміщенням, доменом і підтримкою.
+              </p>
             </div>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="p-4 bg-white shadow rounded h-100">
-              <h5 class="card-title fw-semibold"> Хочете залучити клієнтів з Instagram</h5>
-              <p class="mb-0">Створю сайт з кнопкою для запису або CTA під Instagram-аудиторію.</p>
+              <h5 class="card-title fw-semibold">
+                Хочете залучити клієнтів з Instagram
+              </h5>
+              <p class="mb-0">
+                Створю сайт з кнопкою для запису або CTA під
+                Instagram-аудиторію.
+              </p>
             </div>
           </div>
         </div>
@@ -306,47 +405,76 @@
     </section>
 
     <!-- Section Pricing -->
-     <section class="pricing py-5" id="pricing">
+    <section class="pricing py-5" id="pricing">
       <div class="container">
-        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up" data-aos-duration="400">Тарифи на створення сайту</h2>
+        <h2
+          class="text-center mb-5 fw-semibold"
+          data-aos="fade-up"
+          data-aos-duration="400"
+        >
+          Тарифи на створення сайту
+        </h2>
         <div class="row g-3">
           <!-- Безкоштовний -->
           <div class="col-md-4" data-aos="fade-up" data-aos-duration="300">
             <div class="card card-hover h-100 shadow bg-light">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-semibold">Безкоштовний</h5>
-                <p class="card-text">Односторінковий сайт на готовому шаблоні. Ви надаєте тексти та фото. Сайт розміщується на GitHub Pages або піддомені freestyle.org.ua.</p>
+                <p class="card-text">
+                  Односторінковий сайт на готовому шаблоні. Ви надаєте тексти та
+                  фото. Сайт розміщується на GitHub Pages або піддомені
+                  freestyle.org.ua.
+                </p>
                 <h4 class="card-title fw-bold">0 грн</h4>
-                <a href="https://t.me/freestylesoft" class="btn btn-dark align-self-start px-3 py-2 mt-auto shadow">Замовити</a>
+                <a
+                  href="https://t.me/freestylesoft"
+                  class="btn btn-dark align-self-start px-3 py-2 mt-auto shadow"
+                  >Замовити</a
+                >
               </div>
             </div>
-
           </div>
           <!-- Базовий -->
           <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
-            <div class="card card-hover h-100 shadow border-dark border-1 bg-light">
+            <div
+              class="card card-hover h-100 shadow border-dark border-1 bg-light"
+            >
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-semibold">Базовий</h5>
-                <p class="card-text">Односторінковий сайт (до 5 блоків) на основі одного з 10 шаблонів*. Адаптивний дизайн, базова SEO, встановлення на хостинг.</p>
+                <p class="card-text">
+                  Односторінковий сайт (до 5 блоків) на основі одного з 10
+                  шаблонів*. Адаптивний дизайн, базова SEO, встановлення на
+                  хостинг.
+                </p>
                 <h4 class="card-title fw-bold">280 грн</h4>
-                <a href="https://t.me/freestylesoft" class="btn btn-dark align-self-start px-3 py-2 mt-auto shadow">Замовити</a>
+                <a
+                  href="https://t.me/freestylesoft"
+                  class="btn btn-dark align-self-start px-3 py-2 mt-auto shadow"
+                  >Замовити</a
+                >
               </div>
             </div>
-
           </div>
           <!-- Стандарт -->
           <div class="col-md-4" data-aos="fade-up" data-aos-duration="700">
             <div class="card card-hover h-100 shadow bg-light">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-semibold">Стандарт</h5>
-                <p class="card-text">Сайт до 5 сторінок з унікальним дизайном, SEO-оптимізація, контактна форма, підтримка 30 днів.</p>
+                <p class="card-text">
+                  Сайт до 5 сторінок з унікальним дизайном, SEO-оптимізація,
+                  контактна форма, підтримка 30 днів.
+                </p>
                 <h4 class="card-title fw-bold">від 1800 грн</h4>
-                <a href="https://t.me/freestylesoft" class="btn btn-dark align-self-start px-3 py-2 mt-auto shadow">Замовити</a>
+                <a
+                  href="https://t.me/freestylesoft"
+                  class="btn btn-dark align-self-start px-3 py-2 mt-auto shadow"
+                  >Замовити</a
+                >
               </div>
             </div>
           </div>
         </div>
-        
+
         <p class="mt-5">
           <em
             >*Платні шаблони надаються після запиту — оберіть той, що найкраще
@@ -354,80 +482,147 @@
           >
         </p>
       </div>
-     </section>
+    </section>
 
-     <!-- Section FAQ -->
-     <section class="faq py-5 bg-light" id="faq">
+    <!-- Section FAQ -->
+    <section class="faq py-5 bg-light" id="faq">
       <div class="container">
-        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up">Поширені запитання</h2>
+        <h2 class="text-center mb-5 fw-semibold" data-aos="fade-up">
+          Поширені запитання
+        </h2>
         <div class="accordion" id="faqAccordion">
           <!-- 1 -->
           <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button
+                class="accordion-button fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
                 <i class="bi bi-cash-stack me-2"></i>
                 Скільки коштує сайт?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
               <div class="accordion-body">
-                Вартість залежить від обсягу: є безкоштовні варіанти, а також базовий (280 грн) і стандартний (від 1800 грн).
+                Вартість залежить від обсягу: є безкоштовні варіанти, а також
+                базовий (280 грн) і стандартний (від 1800 грн).
               </div>
             </div>
           </div>
           <!-- 2 -->
           <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
                 <i class="bi bi-person-check me-2"></i>
                 Чи можна замовити сайт без технічних знань?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
               <div class="accordion-body">
-                Так. Ви просто надаєте тексти і фото — все інше я зроблю самостійно.
+                Так. Ви просто надаєте тексти і фото — все інше я зроблю
+                самостійно.
               </div>
             </div>
           </div>
           <!-- 3 -->
           <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
             <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
                 <i class="bi bi-cloud-upload me-2"></i>
                 Чи входить у вартість розміщення сайту?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
               <div class="accordion-body">
-                Так, у всі пакети входить розміщення на GitHub Pages або вашому хостингу.
+                Так, у всі пакети входить розміщення на GitHub Pages або вашому
+                хостингу.
               </div>
             </div>
           </div>
           <!-- 4 -->
           <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
                 <i class="bi bi-laptop me-2"></i>
                 Який сайт мені підійде: візитка, лендинг чи багатосторінковий?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
               <div class="accordion-body">
-                Якщо ви тільки стартуєте — візитка або лендинг. Для масштабного представлення — багатосторінковий сайт.
+                Якщо ви тільки стартуєте — візитка або лендинг. Для масштабного
+                представлення — багатосторінковий сайт.
               </div>
             </div>
           </div>
           <!-- 5 -->
           <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
             <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <button
+                class="accordion-button collapsed fw-semibold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
                 <i class="bi bi-gear me-2"></i>
                 Чи допоможете з доменом або ботом?
               </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
               <div class="accordion-body">
-                Так. Допоможу з реєстрацією домену, підключенням форми запису або створенням Telegram-бота.
+                Так. Допоможу з реєстрацією домену, підключенням форми запису
+                або створенням Telegram-бота.
               </div>
             </div>
           </div>
@@ -435,115 +630,231 @@
       </div>
     </section>
 
-<!-- Section Partners -->
-<section class="partners py-5" id="partners">
-  <div class="container">
-    <h2 class="text-center mb-4 fw-semibold" data-aos="fade-up">
-      Мої партнери
-    </h2>
-    <p class="text-center text-dark mb-5" data-aos="fade-up" data-aos-duration="200">Ми об’єднуємо фахівців із дизайну, копірайтингу, реклами та розробки, щоб реалізовувати ефективні рішення для малого бізнесу та соціальних проєктів.</p>
-    <div class="row g-3">
-      <!-- Liberty -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="card card-hover shadow h-100 py-4 bg-light">
-          <i class="bi bi-bullseye text-center display-5 text-dark"></i>
-          <div class="card-body text-center">
-            <h5 class="fw-semibold">Liberty</h5>
-            <p><em>Таргетолог</em></p>
-            <p class="card-text">
-              Спеціалізується на запуску реклами в соцмережах. Результати — вже
-              з першого тижня.
-            </p>
-            <a
-              href="https://liberty.freestyle.org.ua"
-              class="btn btn-outline-dark px-3 py-2"
-              >Перейти</a
-            >
+    <!-- Section Partners -->
+    <section class="partners py-5" id="partners">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-semibold" data-aos="fade-up">
+          Мої партнери
+        </h2>
+        <p
+          class="text-center text-dark mb-5"
+          data-aos="fade-up"
+          data-aos-duration="200"
+        >
+          Ми об’єднуємо фахівців із дизайну, копірайтингу, реклами та розробки,
+          щоб реалізовувати ефективні рішення для малого бізнесу та соціальних
+          проєктів.
+        </p>
+        <div class="row g-3">
+          <!-- Liberty -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card card-hover shadow h-100 py-4 bg-light">
+              <i class="bi bi-bullseye text-center display-5 text-dark"></i>
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="fw-semibold">Олена Смешко</h5>
+                <p><em>Таргетолог</em></p>
+                <p class="card-text">
+                  Спеціалізується на запуску реклами в соцмережах. Результати —
+                  вже з першого тижня.
+                </p>
+                <a
+                  href="https://liberty.freestyle.org.ua"
+                  class="btn btn-outline-dark px-3 py-2 mt-auto align-self-center"
+                  >Перейти</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Dignity -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card card-hover shadow h-100 py-4 bg-light">
+              <i
+                class="bi bi-pencil-square text-center display-5 text-dark"
+              ></i>
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="fw-semibold">Галина Онищук</h5>
+                <p><em>Копірайтер</em></p>
+                <p class="card-text">
+                  Створює тексти, що чіпляють: сторінки, описи, блогові пости
+                  для малого бізнесу.
+                </p>
+                <a
+                  href="https://dignity.freestyle.org.ua"
+                  class="btn btn-outline-dark px-3 py-2 mt-auto align-self-center"
+                  >Перейти</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Clarity -->
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card card-hover shadow h-100 py-4 bg-light">
+              <i class="bi bi-stars text-center display-5 text-dark"></i>
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="fw-semibold">Марія Гірняк</h5>
+                <p><em>Контент-мейкер AI</em></p>
+                <p class="card-text">
+                  Генерує тексти, зображення та відео за допомогою ШІ — швидко і
+                  креативно.
+                </p>
+                <a
+                  href="https://clarity.freestyle.org.ua"
+                  class="btn btn-outline-dark px-3 py-2 mt-auto align-self-center"
+                  >Перейти</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Dignity -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="card card-hover shadow h-100 py-4 bg-light">
-          <i class="bi bi-pencil-square text-center display-5 text-dark"></i>
-          <div class="card-body text-center">
-            <h5 class="fw-semibold">Dignity</h5>
-            <p><em>Копірайтер</em></p>
-            <p class="card-text">
-              Створює тексти, що чіпляють: сторінки, описи, блогові пости для
-              малого бізнесу.
-            </p>
-            <a
-              href="https://dignity.freestyle.org.ua"
-              class="btn btn-outline-dark px-3 py-2"
-              >Перейти</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- Clarity -->
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="card card-hover shadow h-100 py-4 bg-light">
-          <i class="bi bi-stars text-center display-5 text-dark"></i>
-          <div class="card-body text-center">
-            <h5 class="fw-semibold">Clarity</h5>
-            <p><em>Контент-мейкер AI</em></p>
-            <p class="card-text">
-              Генерує тексти, зображення та відео за допомогою ШІ — швидко і
-              креативно.
-            </p>
-            <a href="https://clarity.freestyle.org.ua" class="btn btn-outline-dark px-3 py-2">Перейти</a>
-          </div>
-        </div>
-      </div>
+    </section>
 
 
-    </div>
-  </div>
-</section>
 
     <!-- Section Contacts -->
-<section class="contact py-5 text-primary bg-light" id="contact">
-  <div class="container">
-    <h2
-      class="text-center mb-4 text-dark fw-semibold"
-      data-aos="fade-up"
-      data-aos-duration="700"
-    >
-      Мої контакти
-    </h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8 text-center text-dark">
-        <p
-          class="mb-5"
-          data-aos="fade-up"
-          data-aos-duration="800"
-        >
-          Я готовий відповісти на всі ваші запитання та допомогти з запуском вашого сайту.
-        </p>
-        <a
-          href="https://t.me/freestylesoft"
-          class="btn btn-outline-dark px-3 py-2 mb-3"
-          data-aos="fade-up"
-          data-aos-duration="900"
-        >Написати в телеграм</a>        
+    <section class="contact py-5 bg-light text-dark" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-semibold" data-aos="fade-up" data-aos-duration="700">
+          Мої контакти
+        </h2>
+            <p class="mb-4 text-center" data-aos="fade-up" data-aos-duration="800">
+              Пишіть або телефонуйте — я допоможу з запуском вашого сайту!
+            </p>
+        <div class="row justify-content-center g-3">
+          <div class="col-md-6 text-center" data-aos="fade-up" data-aos-duration="800">
+
+            <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i><a href="tel:+380983199618" class="text-decoration-none text-dark">+38 (098) 319 96 18</a></p>
+            <p class="mb-4"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:balance.soft.ua@gmail.com" class="text-decoration-none text-dark">balance.soft.ua@gmail.com</a></p>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="900">
+            <h5 class="text-center fw-semibold mb-3">Соцмережі та платформи</h5>
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3 fs-5">
+              <li>
+                <a href="https://t.me/balancestyle" class="text-dark" target="_blank" rel="noopener">
+                  <i class="bi bi-telegram"></i>
+                </a> 
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/balance-style/" class="text-dark" target="_blank" rel="noopener">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>             
+              <li>
+                <a href="https://wa.me/380983199618" class="text-dark" target="_blank" rel="noopener">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/sa80balance/" class="text-dark" target="_blank" rel="noopener">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/CrystalHorizon" class="text-dark" target="_blank" rel="noopener">
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://resumefreestyle.wordpress.com/" class="text-dark" target="_blank" rel="noopener">
+                  <i class="bi bi-wordpress"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="1000">
+
+          <a href="https://t.me/freestylesoft" class="btn btn-dark px-4 py-2 shadow-sm mt-4">Написати в Telegram</a>
+        </div>
+
       </div>
-    </div>
-  </div>
-</section>
-    
+    </section>
+
     <!-- Footer -->
-    <footer class="footer bg-dark">
-      <div class="container text-white text-center py-4 mb-0">
-        &copy; Веб-розробник Микола Касянчук - Всі права захищені
+    <footer class="footer bg-dark text-white pt-4">
+      <div class="container">
+        <!-- Лінія 1: Логотип + соцмережі -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3 border-bottom border-secondary"
+        >
+          <div class="fw-bold fs-4 mb-3 mb-md-0">Balance</div>
+          <p class=""><i class="bi bi-envelope-fill"></i><a href="mailto:balance.soft.ua@gmail.com" class="text-decoration-none text-white">balance.soft.ua@gmail.com</a></p>
+
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="me-3">
+              <a href="https://t.me/balancestyle" class="text-white">
+                <i class="bi bi-telegram fs-5"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://www.linkedin.com/in/balance-style/" class="text-white">
+                <i class="bi bi-linkedin fs-5"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://wa.me/380983199618" class="text-white">
+                <i class="bi bi-whatsapp fs-5"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://www.facebook.com/sa80balance/" class="text-white">
+                <i class="bi bi-facebook fs-5"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a href="https://github.com/CrystalHorizon" class="text-white">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://resumefreestyle.wordpress.com/" class="text-white">
+                <i class="bi bi-wordpress fs-5"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Лінія 2: Меню -->
+        <div
+          class="d-flex justify-content-center py-3 border-bottom border-secondary flex-wrap"
+        >
+          <a href="#hero" class="nav-link px-3 text-white">Головна</a>
+          <a href="#services" class="nav-link px-3 text-white">Послуги</a>
+          <a href="#about" class="nav-link px-3 text-white">Про мене</a>
+          <a href="#portfolio" class="nav-link px-3 text-white">Портфоліо</a>
+          <a href="#pricing" class="nav-link px-3 text-white">Ціни</a>
+          <a href="#faq" class="nav-link px-3 text-white">Запитання</a>
+          <a href="#partners" class="nav-link px-3 text-white">Партнери</a>
+          <a href="#contact" class="nav-link px-3 text-white">Контакти</a>
+        </div>
+    
+        <!-- Лінія 3: Авторське право -->
+        <div class="text-center py-3 small text-secondary">
+          &copy; 2025 balance.pp.ua — Всі права захищені
+        </div>
       </div>
     </footer>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-
     <!-- AOS (Animate On Scroll) -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
